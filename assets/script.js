@@ -12,8 +12,8 @@ let nameButton = document.querySelector(".main-button");
 nameButton.addEventListener("click", showNameFormValues);
 
 function zodiac() {
-  var birthmonth = document.getElementById("month").value;
-  var birthday = document.getElementById("day").value;
+  let birthmonth = document.getElementById("month").value;
+  let birthday = document.getElementById("day").value;
   
   if (birthmonth == 1 && birthday >= 20 || birthmonth == 2 && birthday <= 18){
       result = ("Aquarius");
@@ -115,18 +115,18 @@ function restart(event) {
 let refreshButton = document.querySelector("#button-3");
 refreshButton.addEventListener("click", restart);
 
-function mostrar() {
+function show() {
   div = document.getElementById('screen-2');
   div.style.display = '';
 }
 
-function cerrar() {
+function close() {
   div = document.getElementById('screen-2');
   div.style.display = 'none';
 }
 
 function firstHide() {
-  var x = document.getElementById("screen-1");
+  let x = document.getElementById("screen-1");
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
@@ -135,12 +135,10 @@ function firstHide() {
 }
 
 function hideSecond() {
-  var x = document.getElementById("screen-2");
+  let x = document.getElementById("screen-2");
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
     x.style.display = "none";
   }
 }
-
-
